@@ -17,8 +17,8 @@ class ProductoFactory extends Factory
             'name' => $this->faker->word(),
             'description' => $this->faker->sentence(10),
             'quantity' => $this->faker->numberBetween(1, 100),
-            'status' => $this->faker->randomElement([0, 1]), // 0 = inactivo, 1 = activo
-            'seller_id' => User::factory(), // Crear un usuario asociado
+            'status' => $this->faker->randomElement([0, 1]),
+            'seller_id' => User::factory(),
         ];
     }
 }

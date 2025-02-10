@@ -16,7 +16,7 @@ class PostFactory extends Factory
     public function definition()
     {
         return [
-            'user_id' => User::factory(), // Relacionar con un usuario
+            'user_id' => User::factory(),
             'title' => $this->faker->sentence(),
             'status' => $this->faker->randomElement(['draft', 'published']),
             'created_at' => now(),

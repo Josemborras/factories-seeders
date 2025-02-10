@@ -17,8 +17,8 @@ class ComentarioFactory extends Factory
     public function definition()
     {
         return [
-            'user_id' => User::factory(), // Relacionar con un usuario existente o generar uno nuevo
-            'post_id' => Post::factory(), // Relacionar con un post existente o generar uno nuevo
+            'user_id' => User::factory(),
+            'post_id' => Post::factory(),
             'comment' => $this->faker->paragraph(),
             'created_at' => now(),
             'updated_at' => now(),
